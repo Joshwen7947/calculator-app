@@ -14,3 +14,48 @@ $white: hsl(0, 0, 100%);
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	background-color: $mainBackground;
+}
+
+.main-container {
+	height: 50vh;
+	width: 50%;
+	background-color: orange;
+	margin: auto;
+	margin-top: 200px;
+	.head {
+		h1 {
+			color: $white;
+			font-size: 3rem;
+		}
+	}
+	.numbers {
+		input {
+			width: 90%;
+			text-align: right;
+			padding: 15px;
+			font-size: 32px;
+			border-radius: 15px;
+			border: none;
+			background-color: $screenBackground;
+			color: $white;
+			margin-top: 25px;
+		}
+	}
+	.keypadBox {
+		background-color: $keypadBackground;
+		height: 500px;
+		width: 90%;
+		border-radius: 15px;
+		margin-top: 25px;
+	}
+}

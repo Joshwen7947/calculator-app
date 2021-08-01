@@ -1,2 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  background-color: #3a4764;
+}
+
+.main-container {
+  height: 50vh;
+  width: 50%;
+  background-color: orange;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.main-container .head h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.main-container .numbers input {
+  width: 90%;
+  text-align: right;
+  padding: 15px;
+  font-size: 32px;
+  border-radius: 15px;
+  border: none;
+  background-color: #182034;
+  color: white;
+  margin-top: 25px;
+}
+
+.main-container .keypadBox {
+  background-color: #232c43;
+  height: 500px;
+  width: 90%;
+  border-radius: 15px;
+  margin-top: 25px;
+}
 /*# sourceMappingURL=styles.css.map */
