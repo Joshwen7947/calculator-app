@@ -25,11 +25,10 @@ body {
 	font-size: 32px;
 	background-color: $mainBackground;
 }
-
 .main-container {
 	height: 50vh;
 	width: 50%;
-	background-color: orange;
+	// background-color: orange;
 	margin: auto;
 	margin-top: 200px;
 	.head {
@@ -42,7 +41,7 @@ body {
 		input {
 			width: 90%;
 			text-align: right;
-			padding: 15px;
+			padding: 25px;
 			font-size: 32px;
 			border-radius: 15px;
 			border: none;
@@ -57,5 +56,51 @@ body {
 		width: 90%;
 		border-radius: 15px;
 		margin-top: 25px;
+	}
+	.numberKeys {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		button {
+			width: 100px;
+			height: 50px;
+			margin: 20px;
+			border: none;
+			border-radius: 10px;
+			background-color: $keyBackground;
+			box-shadow: 1px 5px $keyShadow;
+			font-size: 32px;
+			font-family: 'Spartan', sans-serif;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+		#del {
+			background-color: hsl(221, 33%, 42%);
+			box-shadow: 1px 5px $mainBackground;
+		}
+	}
+	.bottomButtons {
+		display: flex;
+		button {
+			width: 250px;
+			height: 50px;
+			margin: 20px;
+			border: none;
+			border-radius: 10px;
+			font-size: 32px;
+			font-family: 'Spartan', sans-serif;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+		#equals {
+			background-color: $keyToggleRed;
+			box-shadow: 1px 5px $darkRed;
+		}
+		#reset {
+			background-color: hsl(221, 33%, 42%);
+			box-shadow: 1px 5px $mainBackground;
+		}
 	}
 }
